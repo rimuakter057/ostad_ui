@@ -9,6 +9,8 @@ class ButtonWidget extends StatelessWidget {
   final Color? backgroundColor;
   final double? height;
   final double? width;
+  final TextStyle ? textStyle;
+  final Text? buttonText;
 
   const ButtonWidget({
     super.key,
@@ -17,7 +19,7 @@ class ButtonWidget extends StatelessWidget {
     this.textColor,
     this.backgroundColor,
     this.height,
-    this.width,
+    this.width, this.textStyle, this.buttonText,
   });
 
   final TextStyle? medium;
@@ -33,9 +35,9 @@ class ButtonWidget extends StatelessWidget {
           color: backgroundColor ?? AppColors.blackColor,
         ),
         child: Center(
-            child: Text(
+            child:buttonText?? Text(
           text ?? "JOIN CLASS",
-          style: medium?.copyWith(color:textColor?? Colors.white),
+          style:textStyle?? medium?.copyWith(color:textColor?? Colors.white),
         )),
       ),
     );

@@ -36,7 +36,7 @@ class OstadUi extends StatelessWidget {
       )
     ),
     getPages: RoutesPage().routes,
-      initialRoute: RoutesName.classJoiningPage,
+      initialRoute: RoutesName.responsivePage,
     );
   }
 }
