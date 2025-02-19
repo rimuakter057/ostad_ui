@@ -10,6 +10,6 @@ class RoutesPage {
         page:()=>ClassJoiningPage()),
     GetPage(name: RoutesName.homePage, page:()=>HomePage()),
      GetPage(name: RoutesName.desktopHomePage, page:()=>DesktopHomePage()),
-    GetPage(name: RoutesName.responsivePage, page:()=>Responsivepage() )
+    GetPage(name: RoutesName.responsivePage, page:()=>ResponsivePage() )
   ];
 }
